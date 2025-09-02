@@ -1,5 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  font-size: 10px;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-container {
+  height: 70vh;
+  width: 60%;
+  background-color: #fff;
+  border-radius: 2rem;
+  padding: 4rem 3rem;
+}
+
+.contact-container .heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.heading p {
+  width: 54%;
+  font-weight: 400;
+  color: grey;
+}
+.contacts {
+  display: flex;
+}
+.contacts .contact-form {
+  background-color: #f5f2f2;
+  height: 46vh;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+  min-width: 340px;
+  width: 42%;
+}
+.contact-form h1 {
+  margin: 1rem 0;
+}
+
+.contact-form form input {
+  font-size: 1rem;
+}
+form .np {
+  display: flex;
+  gap: 2rem;
+  margin: 1rem 0;
+}
+.contact-form form .name,
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-form form .name input,
+.phone input {
+  border: 1px solid rgb(232 230 230);
+  border-radius: 0.4rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+}
+
+form .phone input {
+  width: 110%;
+}
+form .email input {
+  width: 30%;
+  padding: 0.5rem 1rem;
+  border: 1px solid rgb(232 230 230);
+  border-radius: 0.4rem;
+  outline: none;
+  width: 95%;
+  margin: 0.5rem 0 1rem 0;
+}
+
+/* contact form label deco */
+.fontHead {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+form .message textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid rgb(232 230 230);
+  border-radius: 0.5rem;
+  outline: none;
+  width: 95%;
+}
+
+form button {
+  background-color: rgb(201, 9, 9);
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  color: white;
+  width: 15rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+form button:hover {
+  background-color: rgb(225, 8, 8);
 }
